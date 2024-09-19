@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.5317f573.css","mappings":"AAAA,SACI,YAAa,CACb,cACJ","sources":["components/news/News.css"],"sourcesContent":[".MainDiv{\n    display: flex;\n    flex-wrap: wrap;  \n}\n\n\n"],"names":[],"sourceRoot":""}
