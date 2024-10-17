@@ -47,11 +47,4 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # Start the application
-    - name: Start application
-      run: npm start
-      
-    - name: Start application
-      run: PORT=4000 npm start
-
  
