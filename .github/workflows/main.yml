@@ -1,4 +1,4 @@
-name: React Advance CI
+name: news-app CI
 
 on:
   push:
