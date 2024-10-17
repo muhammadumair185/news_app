@@ -32,9 +32,9 @@ jobs:
     # Step 3: Build Docker image
     - name: Build Docker image
       run: |
-        docker build -t gitlab.com/muhammadumair185/news-app:latest .
+        docker build -t registry.gitlab.com/muhammadumair185/news-app:latest .
     
     # Step 4: Push Docker image to GitLab registry
     - name: Push Docker image
       run: |
-        docker push gitlab.com/muhammadumair185/news-app:latest
+        docker push registry.gitlab.com/muhammadumair185/news-app:latest
