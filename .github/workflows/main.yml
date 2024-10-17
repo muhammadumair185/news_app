@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+env:
+  CI: false
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,6 +30,12 @@ jobs:
 
     - name: Build application
       run: npm run build
+      
+    - name: Upload production-ready build files
+      uses: actions/upload-artifact@v2
+      with:
+          name: production-files
+          path: ./build
 
   # Start job for running the application (For local deployment)
   start:
@@ -46,6 +56,8 @@ jobs:
     # Start the application
     - name: Start application
       run: npm start
+      
     - name: Start application
       run: PORT=4000 npm start
 
+ 
