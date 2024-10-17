@@ -20,7 +20,7 @@ jobs:
       uses: docker/login-action@v3.3.0
       with:
         registry: registry.gitlab.com
-        username: muhammadumair185  # GitLab username in GitHub secrets
+        username: mumairhamid30  # GitLab username in GitHub secrets
         password: hurryup123 # GitLab personal access token in GitHub secrets
 
     # Step 2: Set up Docker Buildx
