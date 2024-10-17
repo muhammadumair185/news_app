@@ -30,12 +30,6 @@ jobs:
 
     - name: Build application
       run: npm run build
-      
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v2
-      with:
-          name: production-files
-          path: ./build
 
   # Start job for running the application (For local deployment)
   start:
